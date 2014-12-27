@@ -1,0 +1,10 @@
+{
+    "source": "./",
+    "build": "dist/",
+    "domain": "insomnia.rest",
+    "defaults": {
+        "^/.*": {
+            "_layout": "default.html"
+        }
+    }
+}
