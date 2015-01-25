@@ -151,7 +151,7 @@ footer .promo {
 .border-button:hover,
 .border-button:focus {
     padding: 10px 20px !important;
-    outline: 1px solid #eee;
+    border: 1px solid #eee;
     text-decoration: none;
 }
 
