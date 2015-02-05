@@ -97,8 +97,38 @@ img.screenshot {
     margin-right: 0;
 }
 
+.supporters {
+    margin: 0 auto;
+}
+
+.supporters > a {
+    opacity: 0.9;
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    color: #444;
+    padding: 40px 20px 20px 20px;
+}
+
+.supporters > a:hover,
+.supporters > a:focus,
+.supporters > a:active {
+    opacity: 1;
+    color: #000;
+    text-decoration: none;
+}
+
+.supporters img {
+    width: 100%;
+}
+
+.supporters p {
+    margin-bottom: 0;
+}
+
 footer .promo {
-    max-width: 200px;
+    max-width: 150px;
     margin-bottom: 30px;
 }
 
@@ -231,7 +261,7 @@ footer .promo {
 }
 
 .faint {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .text-right {
