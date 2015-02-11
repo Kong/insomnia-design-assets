@@ -1,0 +1,33 @@
+{% set date = null %}
+
+<section class="skinny bg-white text-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="margin-bottom">Blog Archive</h1>
+
+                <ul>
+                {% for page in _pages.reverse() %}
+                    {% if page.page.type === 'blog_post' && !page.page.hidden %}
+                        {% set localDate = page._created.month + '/' + page._created.year %}
+                        {% set localTimestamp = page._created.timestamp %}
+
+                        {% if localDate !== date %}
+                        </ul>
+
+                        {% set date = localDate %}
+
+                        <h3>{{ localTimestamp|date('F Y') }}</h3>
+                        <ul>
+
+                        {% endif %}
+                            <li>
+                                <a href="{{ page._path }}">{{ page._title }}</a>
+                            </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

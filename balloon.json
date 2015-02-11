@@ -4,7 +4,16 @@
     "domain": "insomnia.rest",
     "defaults": {
         "^/.*": {
-            "_layout": "default.html"
+            "_layout": "default.html",
+            "_title": "Insomnia"
+        },
+        "^/blog/.*$": {
+            "header": { "title": false, "hide": true },
+            "page": { "type": "blog_home" },
+            "_title": "Blog"
+        },
+        "^/blog/\\d{4}/\\d{2}/\\d{2}/.*html$": {
+            "page": { "type": "blog_post" }
         }
     }
 }
