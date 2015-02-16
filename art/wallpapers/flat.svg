@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="1600"
+   height="900"
    id="svg3353"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 5">
+   inkscape:version="0.91 r"
+   sodipodi:docname="flat.svg">
   <defs
      id="defs3355">
     <linearGradient
@@ -41,9 +41,9 @@
          id="stop4391" />
     </linearGradient>
     <filter
-       color-interpolation-filters="sRGB"
        id="filter4375"
-       inkscape:label="Drop Shadow">
+       inkscape:label="Drop Shadow"
+       style="color-interpolation-filters:sRGB">
       <feFlood
          id="feFlood4377"
          flood-opacity="0.427"
@@ -84,7 +84,7 @@
     </linearGradient>
     <filter
        id="filter4300"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow">
       <feFlood
          id="feFlood4302"
@@ -99,7 +99,6 @@
          result="composite1" />
       <feGaussianBlur
          id="feGaussianBlur4306"
-         in="composite"
          stdDeviation="16.7"
          result="blur" />
       <feOffset
@@ -115,9 +114,9 @@
          result="composite2" />
     </filter>
     <filter
-       color-interpolation-filters="sRGB"
        id="filter3436"
-       inkscape:label="Drop Shadow">
+       inkscape:label="Drop Shadow"
+       style="color-interpolation-filters:sRGB">
       <feFlood
          id="feFlood3438"
          flood-opacity="0.163"
@@ -182,8 +181,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="325.32392"
+     inkscape:zoom="0.35"
+     inkscape:cx="239.46095"
      inkscape:cy="565.2691"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -208,45 +207,47 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="fill:#423c70;fill-opacity:1;stroke:none"
-       id="rect4026"
-       width="500"
-       height="281.25"
-       x="86.867912"
-       y="366.36499"
-       inkscape:export-filename="/home/gschier/Workspace/insomnia/app/art/wallpapers/flat.png"
-       inkscape:export-xdpi="460.79999"
-       inkscape:export-ydpi="460.79999" />
+     id="layer1"
+     transform="translate(0,-152.36218)">
     <g
-       style="filter:url(#filter3436)"
-       inkscape:export-ydpi="1036.4088"
-       inkscape:export-xdpi="1036.4088"
-       inkscape:export-filename="/home/gschier/Workspace/insomnia/landing/static/images/icon.png"
-       transform="matrix(0.29398756,0,0,0.29398756,280.35779,293.80188)"
-       id="g3129">
-      <path
-         inkscape:export-filename="/home/gschier/Workspace/rester/static/images/icon-128.png"
-         inkscape:export-ydpi="39.195415"
-         inkscape:export-xdpi="39.195415"
-         transform="matrix(1.3272642,0,0,1.3272642,-284.52129,-135.77841)"
-         d="m 446.68565,648.65662 c 0,48.32222 -39.17291,87.49512 -87.49513,87.49512 -48.32222,0 -87.49512,-39.1729 -87.49512,-87.49512 0,-48.32223 39.1729,-87.49513 87.49512,-87.49513 48.32222,0 87.49513,39.1729 87.49513,87.49513 z"
-         sodipodi:ry="87.495125"
-         sodipodi:rx="87.495125"
-         sodipodi:cy="648.65662"
-         sodipodi:cx="359.19052"
-         id="path3131"
-         style="fill:#ffffff;fill-opacity:1;stroke:none"
-         sodipodi:type="arc" />
-      <path
-         style="fill:url(#linearGradient4669);fill-opacity:1;stroke:none"
-         d="M 184.32034,822.64694 C 150.8224,820.01667 120.46843,799.65691 105.12104,769.52443 98.3811,756.29146 95.02196,743.28011 94.509286,728.4206 c -0.16654,-4.82731 -0.06783,-10.59236 0.219306,-12.8112 l 0.522115,-4.03427 4.079983,2.59774 c 16.23363,10.33611 38.116,11.18101 55.44303,2.14072 13.04481,-6.80606 23.4523,-19.52932 27.58918,-33.72809 4.84857,-16.64148 1.75446,-34.38049 -8.52634,-48.88256 -1.56848,-2.21247 -2.63063,-4.15313 -2.36035,-4.31257 0.27027,-0.15946 2.68563,-0.6832 5.36747,-1.16388 7.04542,-1.26279 24.8074,-1.09788 32.50717,0.30183 37.97055,6.90247 68.67188,35.62923 77.92298,72.91134 2.05733,8.29109 2.7411,14.22264 2.7367,23.74059 -0.01,21.8709 -6.47208,41.21535 -19.6155,58.72037 -20.07154,26.73228 -52.5998,41.37477 -86.07469,38.74632 l 0,0 z"
-         id="path3133"
-         inkscape:connector-curvature="0"
-         inkscape:export-filename="/home/gschier/Workspace/rester/static/images/icon-128.png"
-         inkscape:export-xdpi="42.520538"
-         inkscape:export-ydpi="42.520538" />
+       id="g5915"
+       transform="matrix(3.2,0,0,3.2,-277.97732,-1020.0058)">
+      <rect
+         inkscape:export-ydpi="460.79999"
+         inkscape:export-xdpi="460.79999"
+         inkscape:export-filename="/home/gschier/Workspace/insomnia/app/art/wallpapers/flat.png"
+         y="366.36499"
+         x="86.867912"
+         height="281.25"
+         width="500"
+         id="rect4026"
+         style="fill:#423c70;fill-opacity:1;stroke:none" />
+      <g
+         id="g3129"
+         transform="matrix(0.29398756,0,0,0.29398756,280.35779,293.80188)"
+         inkscape:export-filename="/home/gschier/Workspace/insomnia/landing/static/images/icon.png"
+         inkscape:export-xdpi="1036.4088"
+         inkscape:export-ydpi="1036.4088"
+         style="filter:url(#filter3436)">
+        <circle
+           r="87.495125"
+           cy="648.65662"
+           cx="359.19052"
+           style="fill:#ffffff;fill-opacity:1;stroke:none"
+           id="path3131"
+           transform="matrix(1.3272642,0,0,1.3272642,-284.52129,-135.77841)"
+           inkscape:export-xdpi="39.195415"
+           inkscape:export-ydpi="39.195415"
+           inkscape:export-filename="/home/gschier/Workspace/rester/static/images/icon-128.png" />
+        <path
+           inkscape:export-ydpi="42.520538"
+           inkscape:export-xdpi="42.520538"
+           inkscape:export-filename="/home/gschier/Workspace/rester/static/images/icon-128.png"
+           inkscape:connector-curvature="0"
+           id="path3133"
+           d="M 184.32034,822.64694 C 150.8224,820.01667 120.46843,799.65691 105.12104,769.52443 98.3811,756.29146 95.02196,743.28011 94.509286,728.4206 c -0.16654,-4.82731 -0.06783,-10.59236 0.219306,-12.8112 l 0.522115,-4.03427 4.079983,2.59774 c 16.23363,10.33611 38.116,11.18101 55.44303,2.14072 13.04481,-6.80606 23.4523,-19.52932 27.58918,-33.72809 4.84857,-16.64148 1.75446,-34.38049 -8.52634,-48.88256 -1.56848,-2.21247 -2.63063,-4.15313 -2.36035,-4.31257 0.27027,-0.15946 2.68563,-0.6832 5.36747,-1.16388 7.04542,-1.26279 24.8074,-1.09788 32.50717,0.30183 37.97055,6.90247 68.67188,35.62923 77.92298,72.91134 2.05733,8.29109 2.7411,14.22264 2.7367,23.74059 -0.01,21.8709 -6.47208,41.21535 -19.6155,58.72037 -20.07154,26.73228 -52.5998,41.37477 -86.07469,38.74632 l 0,0 z"
+           style="fill:url(#linearGradient4669);fill-opacity:1;stroke:none" />
+      </g>
     </g>
   </g>
 </svg>
