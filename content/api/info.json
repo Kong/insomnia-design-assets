@@ -1,0 +1,18 @@
+{
+  "greeting": "Congrats on your first request. Enjoy!",
+  "support": "contact greg@schier.co",
+  "features": [
+    "organize requests in workspaces and groups",
+    "execute requests in one click",
+    "reusable snippets",
+    "Swig templating",
+    "JSON validation",
+    "syntax highlighting (JSON, XML, CSS, ...)",
+    "HTTP basic authentication helper",
+    "import/export",
+    "responsive in any size window",
+    "quick request switching (ctrl-p style)",
+    "url encoding and decoding",
+    "export as curl"
+  ]
+}

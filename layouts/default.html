@@ -30,10 +30,36 @@
 
     <script>
         if (window.location.host.indexOf('localhost') !== 0) {
-            !function(){var analytics=window.analytics=window.analytics||[];if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.0";
-                analytics.load('9NupNq33OVC3M55bGAaGT1jMPw7eDjPd');
-                analytics.page()
-            }}();
+            !function () {
+                var analytics = window.analytics = window.analytics || [];
+                if (analytics.invoked)window.console && console.error && console.error("Segment snippet included twice."); else {
+                    analytics.invoked = !0;
+                    analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "group", "track", "ready", "alias", "page", "once", "off", "on"];
+                    analytics.factory = function (t) {
+                        return function () {
+                            var e = Array.prototype.slice.call(arguments);
+                            e.unshift(t);
+                            analytics.push(e);
+                            return analytics
+                        }
+                    };
+                    for (var t = 0; t < analytics.methods.length; t++) {
+                        var e = analytics.methods[t];
+                        analytics[e] = analytics.factory(e)
+                    }
+                    analytics.load = function (t) {
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = !0;
+                        e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                        var n = document.getElementsByTagName("script")[0];
+                        n.parentNode.insertBefore(e, n)
+                    };
+                    analytics.SNIPPET_VERSION = "3.0.0";
+                    analytics.load('9NupNq33OVC3M55bGAaGT1jMPw7eDjPd');
+                    analytics.page()
+                }
+            }();
         }
     </script>
 
@@ -42,93 +68,86 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-inverse bg-purple bg-dark" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                {% if page.type === 'blog_post' %}
-                    <a class="navbar-brand" href="/blog">
-                        <img src="/images/icon-small.png" alt="Insomnia REST Client">
-                        <h1>Blog</h1>
+<nav class="navbar navbar-inverse bg-purple bg-dark" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+                <img src="/images/icon-small.png" alt="Insomnia REST Client">
+                <h1>Insomnia</h1>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/documentation">Documentation</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li>
+                    <a href="https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel"
+                       target="_blank"
+                       class="border-button">
+                        <i class="fa fa-download"></i> &nbsp;Download
                     </a>
-                {% else %}
-                    <a class="navbar-brand" href="/">
-                        <img src="/images/icon-small.png" alt="Insomnia REST Client">
-                        <h1>{{ _title }}</h1>
-                    </a>
-                {% endif %}
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/#features">Features</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li>
-                        <a href="https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel"
-                            target="_blank"
-                            class="border-button">
-                            <i class="fa fa-download"></i> &nbsp;Download
-                        </a>
-                    </li>
-                </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% if page.type == 'splash' %}
+{{ _content }}
+{% else %}
+<section class="bg-white skinny text-lg wide-images">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="margin-bottom">{{ _title }}</h1>
+                {{ _content }}
             </div>
         </div>
-    </nav>
+    </div>
+</section>
+{% endif %}
 
-    {% if page.type === 'blog_post' %}
-        <section class="bg-white skinny text-lg wide-images">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="margin-bottom">{{ _title }}</h1>
-                        {{ _content }}
-                    </div>
-                </div>
-            </div>
-        </section>
-    {% else %}
-        {{ _content }}
-    {% endif %}
-
-    <footer>
-        <section class="bg-purple bg-dark text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <img src="/images/icon.png" alt="Insomnia REST Client" class="promo">
-                        <h1>Insomnia REST Client</h1>
-                        <div class="margin-top">
-                            <div class="footer-buttons download">
-                                <a href="https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel"
-                                        target="_blank"
-                                        class="border-button border-button-lg inline-block">
-                                        <i class="fa fa-download"></i>&nbsp;
-                                        Download Chrome App
-                                </a>
-                            </div>
-                            <div class="footer-buttons social">
-                                <a href="https://plus.google.com/101610668251944264461"
-                                        target="_blank"
-                                        class="border-button border-button-lg inline-block">
-                                        &nbsp;<i class="fa fa-google-plus"></i>&nbsp;
-                                </a>
-                                &nbsp;
-                                <a href="https://twitter.com/GetInsomnia"
-                                        target="_blank"
-                                        class="border-button border-button-lg inline-block">
-                                        &nbsp;<i class="fa fa-twitter"></i>&nbsp;
-                                </a>
-                            </div>
+<footer>
+    <section class="bg-purple bg-dark text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="/images/icon.png" alt="Insomnia REST Client" class="promo">
+                    <h1>Insomnia REST Client</h1>
+                    <div class="margin-top">
+                        <div class="footer-buttons download">
+                            <a href="https://chrome.google.com/webstore/detail/insomnia-rest-client/gmodihnfibbjdecbanmpmbmeffnmloel"
+                               target="_blank"
+                               class="border-button border-button-lg inline-block">
+                                <i class="fa fa-download"></i>&nbsp;
+                                Download Chrome App
+                            </a>
                         </div>
-                        <br>
-                        <p class="faint">
-                            &copy; 2015, Insomnia
-                        </p>
+                        <div class="footer-buttons social">
+                            <a href="https://plus.google.com/101610668251944264461"
+                               target="_blank"
+                               class="border-button border-button-lg inline-block">
+                                &nbsp;<i class="fa fa-google-plus"></i>&nbsp;
+                            </a>
+                            &nbsp;
+                            <a href="https://twitter.com/GetInsomnia"
+                               target="_blank"
+                               class="border-button border-button-lg inline-block">
+                                &nbsp;<i class="fa fa-twitter"></i>&nbsp;
+                            </a>
+                        </div>
                     </div>
+                    <br>
+                    <p class="faint">
+                        &copy; 2015, Insomnia
+                    </p>
                 </div>
             </div>
-        </section>
-    </footer>
+        </div>
+    </section>
+</footer>
 
 </body>
 </html>

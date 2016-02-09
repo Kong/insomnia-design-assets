@@ -1,19 +1,34 @@
 {
-    "source": "./",
-    "build": "dist/",
-    "domain": "insomnia.rest",
-    "defaults": {
-        "^/.*": {
-            "_layout": "default.html",
-            "_title": "Insomnia"
-        },
-        "^/blog/.*$": {
-            "header": { "title": false, "hide": true },
-            "page": { "type": "blog_home" },
-            "_title": "Blog"
-        },
-        "^/blog/\\d{4}/\\d{2}/\\d{2}/.*html$": {
-            "page": { "type": "blog_post" }
-        }
+  "source": "./",
+  "build": "dist/",
+  "domain": "insomnia.rest",
+  "defaults": {
+    "^/.*": {
+      "_layout": "default.html",
+      "_title": "Insomnia"
+    },
+    "^/index.html$": {
+      "page": {
+        "type": "splash"
+      }
+    },
+    "^/documentation/index.html$": {
+      "_title": "Documentation"
+    },
+    "^/blog/index.html$": {
+      "_title": "Changelog"
+    },
+    "^/blog/.*$": {
+      "_title": "Changelog",
+      "page": {
+        "type": "blog_post"
+      }
+    },
+    "^/documentation/.*$": {
+      "_title": "Documentation",
+      "page": {
+        "type": "doc"
+      }
     }
+  }
 }

@@ -1,0 +1,10 @@
+{% set date = null %}
+<ul>
+    {% for page in _pages.reverse() %}
+    {% if page.page.type === 'doc' && !page.page.hidden %}
+    <li>
+        <a href="{{ page._path }}">{{ page._title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
