@@ -11,7 +11,6 @@ Easily schedule an API request in two clicks.
 - requests will be made every `n` seconds
 - click *Send* a third time to stop the requests
 
-Here is a screencast that shows it in action. You will notice that the *Send* icon changes to help
-you through the process.
+Here is a screencast that shows it in action.
 
 ![API Request on Set Interval](/images/docs/timer.gif)
