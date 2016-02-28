@@ -87,7 +87,8 @@ img.screenshot {
 
 .navbar-brand img {
     width: 70px;
-    margin-right: 10px;
+    padding: 10px;
+    margin-right: 5px;
     float: left;
 }
 
@@ -135,7 +136,7 @@ img.screenshot {
 }
 
 footer .promo {
-    max-width: 150px;
+    max-width: 200px;
     margin-bottom: 30px;
 }
 
@@ -304,7 +305,7 @@ footer .promo {
 }
 
 .bg-purple {
-    background-color: #423c70;
+    background-color: #322c58;
     color: #fff;
 }
 
