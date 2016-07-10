@@ -1,5 +1,5 @@
 body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
@@ -44,6 +44,7 @@ img.rounded {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    border: 1px solid #eee;
 }
 
 img.screenshot {
@@ -60,7 +61,7 @@ img.screenshot {
     border: 0;
     border-radius: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .navbar-nav > li > a {
@@ -101,8 +102,7 @@ img.screenshot {
 
 .navbar .border-button {
     padding: 10px 20px !important;
-    margin: 20px;
-    margin-right: 0;
+    margin: 20px 0 20px 20px;
 }
 
 .supporters {
@@ -156,6 +156,13 @@ footer .promo {
     overflow: hidden;
 }
 
+.preview-right .column-left {
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .preview-right .column-right img {
     margin: 0;
     width: 1062px;
@@ -181,6 +188,19 @@ footer .promo {
     margin-bottom: 0;
 }
 
+/** FORMS **/
+
+input {
+    padding: 10px 20px !important;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    width: 100%;
+}
+
+input:focus {
+    outline: 0;
+}
 
 /** BUTTONS **/
 
@@ -188,14 +208,15 @@ footer .promo {
 .border-button:active,
 .border-button:hover,
 .border-button:focus {
+    background-color: transparent;
     padding: 10px 20px !important;
-    border: 1px solid #eee;
+    border: 1px solid #ddd;
     text-decoration: none;
 }
 
 .border-button.border-button-lg {
     padding: 15px 30px !important;
-    font-size: 20px;
+    font-size: 2.2rem;
 }
 
 .border-button:hover {
@@ -209,19 +230,37 @@ footer .promo {
     opacity: 0.8;
 }
 
+/** SIGNUP FORM **/
+
+.signup-form {
+    max-width: 600px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.signup-form input {
+}
+
+.signup-form button {
+    white-space: nowrap;
+    display: inline-block;
+    width: 150px;
+    margin: 0;
+}
 
 /** HELPERS **/
 
+.text-sm {
+    font-size: 0.8em;
+}
+
 .text-lg {
-    font-size: 22px;
+    font-size: 1.3em;
 }
 
 .text-xl {
-    font-size: 36px;
-}
-
-.text-xxl {
-    font-size: 54px;
+    font-size: 2.3em;
 }
 
 .weight-sk {
@@ -272,6 +311,10 @@ footer .promo {
     opacity: 0.7;
 }
 
+.faint-more {
+    opacity: 0.4;
+}
+
 .text-right {
     text-align: right;
 }
@@ -282,6 +325,19 @@ footer .promo {
 
 .margin-bottom {
     margin-bottom: 40px;
+}
+
+.no-pad-left {
+    padding-left: 0;
+}
+
+.no-pad-right {
+    padding-right: 0;
+}
+
+.wide {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .bg-dark {
@@ -323,7 +379,7 @@ footer .promo {
 
 /** MEDIA QUERIES **/
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .preview-right .column-left {
         padding-right: 10px;
     }
@@ -333,7 +389,11 @@ footer .promo {
         padding-right: 0;
     }
 
-    .preview-right .column-right img {
+    .preview-right .column-left {
+        height: auto;
+    }
+
+    .preview-right .column-right {
         display: none;
     }
 
